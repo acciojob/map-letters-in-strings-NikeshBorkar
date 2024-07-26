@@ -7,5 +7,10 @@ function mapLetters(key){
 		if(obj[x]==undefined){
 			obj[x]=[i]
 		}else{
+			obj[x].push(i)
 	}
-	}}
+	}
+	return obj
+}
+let key=prompt();
+alert(mapLetters(key)) 
